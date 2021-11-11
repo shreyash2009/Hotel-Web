@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeefeb;
+    }
+
+/*Header CSS*/
+header
+{
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    font-size: 1.2rem;
+    background-color: #922c40;
+}
+
+/*Header navbar CSS*/
+header nav
+{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*Hotel Logo CSS*/
+header nav img
+{
+    width: 10vh;
+    padding: 0 1vh;
+}
+
+/*Navbar items CSS (Home, About, Contact Us, etc..)*/
+header nav ul li
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/*While hover on Navbar Items CSS*/
+header nav ul li:hover
+{
+    color:#ffcf6e;
+}
+
+/*Navbar items anchor tag CSS*/
+header nav ul a
+{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Searchbar CSS */
+#searchbar
+{
+    padding: 0 0 0 50px;  
+}
+
+/* Searchbar input area CSS */
+#searchbar input
+{
+    border-radius: 5px;
+    width: 576px;
+    height: 3vh;
+    padding: 0 0 0 12px;
+}
+
+/* Search button CSS */
+#search-button
+{
+    padding: 0 0 0 12px;
+}
+
+#search-button button
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffcf6e;
+    font-family: 'Merriweather', serif;
+}
+
+/* While hovering Search button CSS */
+#search-button button:hover
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffda6e;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+/* navbar ends     */
+
+    .imgslider{
+        background-image: url("image/home03.jpg");
+        width: 90vw;
+        height: 70vh;
+        position: relative;
+          top: 0%;
+          left: 4.5%;
+          background-size: 100% 100%;
+          margin-top: 1.7vh;
+       box-shadow: 3px 5px 1px 2px grey;
+      border-radius: 3px;
+      animation:slider 18s infinite linear;
+    }
+    @keyframes slider{
+      0%{
+          background-image: url("image/home03.jpg");
+      }
+      16.67%{
+          background-image: url("image/home04.jpg");
+      }
+      33.33%{
+          background-image: url("image/home05.jpg");
+      }
+      50%{
+          background-image: url("image/home06.jpg");
+      }
+      66.67%{
+          background-image: url("image/home07.jpg");
+      }
+      100%{
+          background-image: url("image/home08.jpg");
+      }
+  }
+  
+    a{
+        text-decoration: none;
+    }
+    #reviews{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .review-heading{
+        letter-spacing: 1px;
+        margin: 30px 0px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* position: absolute;
+        top: 78%; */
+
+
+    }
+    .review-heading h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+        background-color: white;
+        border-radius: 4px;
+        padding: 10px 20px;
+        box-shadow: 1px 1px 2px 2px grey;
+       
+
+    }
+    .review-heading span{
+        font-size: 1.3rem;
+        color: goldenrod;
+        padding-bottom: 3%;
+        letter-spacing: 1px;
+        font-family: cursive;
+
+    }
+    .review-box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+       
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+    .review-box{
+        width: 600px;
+        height: 370px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.274);
+        background-color: rgb(246, 247, 231);
+        padding: 25px;
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 9px;
+
+    }
+    .profile-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 9px;
+        
+    }
+    .profile-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .username{
+        display: flex;
+        flex-direction: column;
+    }
+    .username strong{
+        color: rgb(14, 11, 13);
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+    .username span{
+        color: rgb(80, 40, 37);
+        font-size: 0.8rem;
+    }
+    .box-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .comments{
+        font-family: "Poppins", sans-serif ;
+        font-size: 1rem;
+        color: black;
+    }
+    .review-box:hover{
+        transform: translate(-2%, -2%);
+        
+    }
+@media(max-width: 1060px){
+    .review-box{
+        width: 45%;
+        padding: 10px;
+
+    }
+    .h1{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 790px){
+    .review-box{
+        width: 100%;
+        
+    }
+    .review-heading h2{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .comments{
+        margin-top: 10px;
+    }
+}
+.header{
+    background-color: white;
+}
+
+ /* footer starts  */
+ footer
+ {
+     display: flex;
+     justify-content: center;
+     bottom: 0;
+     width: 100vw;
+     height: 20vh;
+     background-color: #922c40;
+     color: white;
+     margin-top: 50px;
+ }
+ .foot .menu ul{
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ 
+ }
+ .foot .menu ul li{
+     padding: 9px 10px;
+     font-size: 2vh;
+     color: wheat;
+ 
+ }
+ .foot .menu ul a{
+     text-decoration: none;
+ }
+ .foot .social h4{
+     text-align: center;
+     border-bottom: solid wheat;
+     padding: 1vh;
+ }
+ .foot .social ul li{
+     list-style: none;
+     text-decoration: none;
+     padding: 9px 10px;
+     font-size: 3vh;
+     color: white;
+     
+ }
+ .foot .social ul a{
+     text-decoration: none;
+     color: wheat;
+ }
+ .foot .social ul{
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ 
+ }
+ h5{
+     text-align: center;
+     color: wheat;
+ }
+ .foot .social ul a:hover{
+     transition: 0.4s;
+     color: white;
+ }
+ .foot .menu ul li:hover{
+     transition: 0.4s;
+     color: white;
+ }
+ /* footer ends  */
+ 
+
+
+

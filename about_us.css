@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 350;
+    line-height: 1.8em;
+    color: #d8d174;
+}
+
+/*Header CSS*/
+header
+{
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    font-size: 1.2rem;
+    background-color: #922c40;
+}
+
+/*Header navbar CSS*/
+header nav
+{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*Hotel Logo CSS*/
+header nav img
+{
+    width: 10vh;
+    padding: 0 1vh;
+}
+
+/*Navbar items CSS (Home, About, Contact Us, etc..)*/
+header nav ul li
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/*While hover on Navbar Items CSS*/
+header nav ul li:hover
+{
+    color:#ffcf6e;
+}
+
+/*Navbar items anchor tag CSS*/
+header nav ul a
+{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Searchbar CSS */
+#searchbar
+{
+    padding: 0 0 0 50px;  
+}
+
+/* Searchbar input area CSS */
+#searchbar input
+{
+    border-radius: 5px;
+    width: 576px;
+    height: 3vh;
+    padding: 0 0 0 12px;
+}
+
+/* Search button CSS */
+#search-button
+{
+    padding: 0 0 0 12px;
+}
+
+#search-button button
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffcf6e;
+    font-family: 'Merriweather', serif;
+}
+
+/* While hovering Search button CSS */
+#search-button button:hover
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffda6e;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+/* navbar ends     */
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;             /* Parallax Magic */     
+}
+
+.pimg1{
+    background-image: url('image/about01\'.jpg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('image/about02.jpg');
+    min-height: 70%;
+    min-width: 80%;
+}
+
+.pimg3{
+    background-image: url('image/about03.jpg');
+    min-height: 70%;
+    min-width: 80%;
+}
+
+.section{
+    text-align: center;
+    padding: 4% 8%;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: rgb(78, 78, 78);
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ChefGrid {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.ChefGrid article {
+    background: #eee5e9;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.ChefGrid article:hover {
+    transform: translateY(10px);
+    box-shadow: 2px 2px 26px 0px rgba(131, 124, 126, 0.726);
+}
+
+.ChefGrid article img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 15px;
+}
+
+.ChefText {
+    padding: 15px;
+    color: rgb(78, 78, 78);
+}
+
+.ptext{
+    font-family: "Cambria Math", sans-serif;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 7px;
+    text-transform: uppercase;              /*Makes characters Uppercase*/
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+  /* footer starts  */
+  footer
+  {
+      display: flex;
+      justify-content: center;
+      bottom: 0;
+      width: 100vw;
+      height: 20vh;
+      background-color: #922c40;
+      color: white;
+      margin-top: 50px;
+  }
+  .foot .menu ul{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  
+  }
+  .foot .menu ul li{
+      padding: 9px 10px;
+      font-size: 2vh;
+      color: wheat;
+  
+  }
+  .foot .menu ul a{
+      text-decoration: none;
+  }
+  .foot .social h4{
+      text-align: center;
+      border-bottom: solid wheat;
+      padding: 1vh;
+  }
+  .foot .social ul li{
+      list-style: none;
+      text-decoration: none;
+      padding: 9px 10px;
+      font-size: 3vh;
+      color: white;
+      
+  }
+  .foot .social ul a{
+      text-decoration: none;
+      color: wheat;
+  }
+  .foot .social ul{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  
+  }
+  h5{
+      text-align: center;
+      color: wheat;
+  }
+  .foot .social ul a:hover{
+      transition: 0.4s;
+      color: white;
+  }
+  .foot .menu ul li:hover{
+      transition: 0.4s;
+      color: white;
+  }
+  /* footer ends  */
+  
+
+/*Responsive Part*/
+
+@media (max-width: 900px){
+    .ChefGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ChefGrid article {
+        text-align: center;
+    }
+}

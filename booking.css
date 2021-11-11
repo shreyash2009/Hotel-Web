@@ -1,0 +1,392 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+}
+/*Header CSS*/
+header
+{
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    font-size: 1.2rem;
+    background-color: #922c40;
+}
+
+/*Header navbar CSS*/
+header nav
+{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*Hotel Logo CSS*/
+header nav img
+{
+    width: 10vh;
+    padding: 0 1vh;
+}
+
+/*Navbar items CSS (Home, About, Contact Us, etc..)*/
+header nav ul li
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+
+/*While hover on Navbar Items CSS*/
+header nav ul li:hover
+{
+    color:#ffcf6e;
+}
+
+/*Navbar items anchor tag CSS*/
+header nav ul a
+{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Searchbar CSS */
+#searchbar
+{
+    padding: 0 0 0 50px;  
+}
+
+/* Searchbar input area CSS */
+#searchbar input
+{
+    border-radius: 5px;
+    width: 576px;
+    height: 3vh;
+    padding: 0 0 0 12px;
+}
+
+/* Search button CSS */
+#search-button
+{
+    padding: 0 0 0 12px;
+}
+
+#search-button button
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffcf6e;
+    font-family: 'Merriweather', serif;
+}
+
+/* While hovering Search button CSS */
+#search-button button:hover
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffda6e;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+/* navbar ends     */
+
+  /* main starts */
+  .imgslider{
+      background-image: url("image/room01.jpg");
+      width: 90vw;
+      height: 70vh;
+      position: relative;
+        top: 0%;
+        left: 4.5%;
+        background-size: 100% 100%;
+        margin-top: 1.7vh;
+     box-shadow: 3px 5px 1px 2px grey;
+    border-radius: 3px;
+    animation:slider 18s infinite linear;
+  }
+  @keyframes slider{
+    0%{
+        background-image: url("image/room01.jpg");
+    }
+    16.67%{
+        background-image: url("image/room02.jpg");
+    }
+    33.33%{
+        background-image: url("image/room03.jpg");
+    }
+    50%{
+        background-image: url("image/room04.jpg");
+    }
+    66.67%{
+        background-image: url("image/room05.jpg");
+    }
+    100%{
+        background-image: url("image/room06.jpg");
+    }
+}
+
+
+.room_cards{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    background-color: #f3f3f3;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 4.6vw;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+.room_cards .card{
+    width: 80vw;
+    height: 60vh;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    box-shadow: 3px 2px 1px 1px gray;
+}
+
+.room_cards .card .room_img{
+    height: 100%;
+    width: 124%;
+}
+
+.room_cards .card img{
+    height: 100%;
+    width: 100%; 
+}
+
+.room_cards .card .room_info{
+    padding: 9px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.room_cards .card .room_info h3{
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 800;
+    border-bottom: solid wheat;
+    margin-bottom: 1rem;
+}
+
+.room_cards .card .room_info p{
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.3;
+    color: rgba(0, 0, 0, 0.76);
+}
+.room_cards .card .room_info ul{
+    list-style: none;
+    margin: 15px 0;
+}
+.room_cards .card .room_info ul li{
+    padding: 5px 5px;
+    letter-spacing: 1px;
+    color: rgb(71, 71, 71);
+}
+.room_cards .card .room_info ul li i{
+    padding: 6px;
+    font-size: medium;
+    margin-right: 5px;
+}
+.rate{
+    opacity: 0.8;
+}
+.rate span{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--yellow);
+}
+@media (max-width: 1200px){
+
+    .rate{
+        display: none;
+        
+    }
+}
+
+/* reverse     part     */
+.room_cards .card02{
+    width: 80vw;
+    height: 60vh;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 3px 2px 1px 1px gray;
+}
+.room_cards .card02 .room_img{
+    height: 100%;
+    width: 124%;
+}
+.room_cards .card02 img{
+    height: 100%;
+    width: 100%;   
+}
+.room_cards .card02 .room_info{
+    padding: 9px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}
+.room_cards .card02 .room_info h3{
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 800;
+    border-bottom: solid wheat;
+    margin-bottom: 1rem;
+}
+.room_cards .card02 .room_info p{
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.3;
+    color: rgba(0, 0, 0, 0.76);
+}
+.room_cards .card02 .room_info ul{
+    list-style: none;
+    margin: 15px 0;
+}
+.room_cards .card02 .room_info ul li{
+    padding: 5px 5px;
+    letter-spacing: 1px;
+    color: rgb(71, 71, 71);
+}
+.room_cards .card02 .room_info ul li i{
+    padding: 6px;
+    font-size: medium;
+    margin-right: 5px;
+    
+}
+.rate{
+    opacity: 0.8;
+}
+.rate span{
+    font-size: 40px;
+    font-weight: 900;
+    color: goldenrod;
+}
+
+/* reverse part ends     */
+.room_info .but{
+    text-align: center;
+    
+}
+.room_info .but button{
+    width: 7vw;
+    height: 4vh;
+    font-size: large;
+    border-bottom: 3px solid rgb(212, 159, 25);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: 700;
+    background-color: white;
+    cursor: pointer;
+    
+}
+/* animation part   */
+.room_cards .card .room_img:hover{
+    transform:scale(1.01);
+}
+.room_cards .card02 .room_img:hover{
+    transform:scale(1.01);
+}
+.room_cards .card:hover{
+    transform: translate(-1%, -1%);
+}
+.room_cards .card02:hover{
+    transform: translate(-1%, -1%);
+}
+.room_info .but button:hover{
+    background-color: rgba(0, 0, 0, 0.726);
+    color: rgb(228, 170, 25);
+}
+/* animation part ends   */
+
+  /* main ends  */
+
+  /* footer starts  */
+footer
+{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100vw;
+    height: 20vh;
+    background-color: #922c40;
+    color: white;
+    margin-top: 50px;
+}
+.foot .menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.foot .menu ul li{
+    padding: 9px 10px;
+    font-size: 2vh;
+    color: wheat;
+
+}
+.foot .menu ul a{
+    text-decoration: none;
+}
+.foot .social h4{
+    text-align: center;
+    border-bottom: solid wheat;
+    padding: 1vh;
+}
+.foot .social ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 9px 10px;
+    font-size: 3vh;
+    color: white;
+    
+}
+.foot .social ul a{
+    text-decoration: none;
+    color: wheat;
+}
+.foot .social ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+h5{
+    text-align: center;
+    color: wheat;
+}
+.foot .social ul a:hover{
+    transition: 0.4s;
+    color: white;
+}
+.foot .menu ul li:hover{
+    transition: 0.4s;
+    color: white;
+}
+/* footer ends  */
