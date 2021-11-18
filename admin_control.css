@@ -138,17 +138,16 @@ body
 
 main
 {
+    background-color: #f3f3f3;
     display: flex;
     justify-content: center;
-    background-color: #f3f3f3;
 }
 
 .main-container
 {
-    width: 70vw;
-    height: 800px;
     background-color: white;
     margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 .main-container h1
@@ -166,103 +165,117 @@ main
     background-color: #ffcf6e;
 }
 
-.name
+h2
 {
-    font-family: 'Merriweather', serif;
-    margin: 50px 0 0 50px;
-    font-size: 20px;
-    font-weight: 500;
+    font-family: 'Merriweather', serif;    
 }
 
-.name input
-{
-    margin-left: 20px;
-    padding: 0 12px;
-    height: 25px;
-    width: 925px;
-    font-family: 'Merriweather', serif;
-}
-
-.email
-{
-    font-family: 'Merriweather', serif;
-    margin: 50px 0 0 50px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.email input
-{
-    margin-left: 24px;
-    padding: 0 12px;
-    height: 25px;
-    width: 936px;
-    font-family: 'Merriweather', serif;
-}
-
-.concern
-{
-    font-family: 'Merriweather', serif;
-    margin: 50px 0 0 50px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-textarea
-{
-    margin-top: 25px;
-    width: 1080px;
-    height: 300px;
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    padding: 10px;
-    margin-bottom: 50px;
-}
-
-.button-space
+.function1
 {
     display: flex;
-    justify-content: right;
-    background-color: #f3f3f3;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
-.button-space button
+.func1-desc p
 {
-    width: 100px;
-    height: 40px;
+    width: 850px;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.func1-button button
+{
+    margin-right: 50px;
+    margin-left: 125px;
+    margin-top: 35px;
     background-color: #922c40;
     color: white;
-    font-family: 'Merriweather', serif;
     border-radius: 5px;
-    margin-top: 30px;
-    margin-right: 30px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Merriweather', serif; 
+    font-size: 15px;
 }
 
-.button-space button:hover
+.func1-button button:hover
 {
-    width: 100px;
-    height: 40px;
-    background-color: #922c40;
     color: #ffcf6e;
-    font-weight: 550;
-    font-family: 'Merriweather', serif;
-    border-radius: 5px;
-    margin-top: 30px;
 }
 
-.success
+.function2
 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #7df381;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.func2-desc p
+{
+    width: 850px;
+    margin-top: 20px;
     font-family: 'Merriweather', serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.func2-button button
+{
+    margin-right: 50px;
+    margin-left: 125px;
+    margin-top: 35px;
+    background-color: #922c40;
+    color: white;
     border-radius: 5px;
-    text-align: center;
-    width: 70vw;
-    height: 40px;
-    margin-left: 280px;
-    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Merriweather', serif; 
+    font-size: 15px;
+}
+
+.func2-button button:hover
+{
+    color: #ffcf6e;
+}
+
+.function3
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.func3-desc p
+{
+    width: 850px;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.func3-button button
+{
+    margin-right: 50px;
+    margin-left: 125px;
+    margin-top: 35px;
+    background-color: #922c40;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Merriweather', serif; 
+    font-size: 15px;
+}
+
+.func3-button button:hover
+{
+    color: #ffcf6e;
 }
 
 /*Footer CSS*/

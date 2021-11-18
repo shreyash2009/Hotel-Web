@@ -6,6 +6,29 @@
     box-sizing: border-box;
 }
 
+.admin-login
+{
+    padding-left: 425px;
+}
+
+.admin-login a
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.admin-login a:hover
+{
+    text-decoration: none;
+    list-style: none;
+    color:#ffcf6e;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
 body, html{
     height: 100%;
     font-size: 17px;

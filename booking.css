@@ -108,6 +108,29 @@ header nav ul a
     font-weight: 900;
 }
 
+.admin-login
+{
+    padding-left: 425px;
+}
+
+.admin-login a
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.admin-login a:hover
+{
+    text-decoration: none;
+    list-style: none;
+    color:#ffcf6e;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
 body
 {
     background-color: #f3f3f3;

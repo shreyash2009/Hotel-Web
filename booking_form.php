@@ -38,6 +38,10 @@
             <div id="search-button">
                 <button> &#128269;</button>
             </div>
+
+            <div class="admin-login">
+                <a href="http://localhost/hotel/admin_login.php">Admin Login</a>
+            </div>
         </nav>
     </header>
         

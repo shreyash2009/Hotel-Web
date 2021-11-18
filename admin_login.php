@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - The Royal Palace</title>
-    <link rel="stylesheet" href="contact-us.css">
+    <title>The Royal Palace</title>
+    <link rel="stylesheet" href="admin_login.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     
@@ -47,25 +48,25 @@
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST')
         {
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $database = "hotel";
+            $username = $_POST['username'];
+            $password = $_POST['password'];
 
-            $name = $_POST['full-name'];
-            $email = $_POST['email'];
-            $concern = $_POST['concern'];
+            $user1 = "Abhigyan";
+            $user2 = "Shreyash";
 
-            $conn = mysqli_connect($servername, $username, $password, $database);
-
-            $sql = "INSERT INTO `contact us` (`Name`, `Email ID`, `Concern`) VALUES ('$name', '$email', '$concern')";
-
-            $result = mysqli_query($conn, $sql);
-
-            if ($result)
+            $pass1 = "123456";
+            $pass2 = "abcd";
+                
+            if (($username == $user1 && $password == $pass1) || ($username == $user2 && $password == $pass2))
             {
-                echo "<div class='success'>
-                <strong>Successfully Noted!</strong><pre> </pre>Our executive will get back to you on this!
+                header("Location: http://localhost/hotel/admin_control.html");
+                exit();
+            }
+
+            else
+            {
+                echo "<div class='fail'>
+                <strong>Failed!</strong><pre> </pre>Wrong Username or Password
                 </div>";
             }
         }
@@ -74,35 +75,25 @@
     <main>
 
         <div class="main-container">
-            <h1>Contact Us</h1>
+            <h1>Admin Login</h1>
             <hr>
 
-            <form action="/hotel/contact-us.php" method="post">
-                <div class="name">
-                    <label for="name">Full Name: </label>
-                    <input type="text" name="full-name" id="full-name">
+            <form action="/hotel/admin_login.php" method="post">
+                <div class="inputs">
+                    <div class="username">
+                        Username: <input type="text" name="username" id="username"><br>
+                    </div>
+                    <div class="password">
+                        Password: <input type="password" name="password" id="password">
+                    </div>
                 </div>
-
-                <div class="email">
-                    <label for="email">Email ID: </label>
-                    <input type="email" name="email" id="email">
+                <div class="class-buttons">
+                    <input type="submit" value="Submit" id="submit-button">
                 </div>
-
-                <div class="concern">
-                    <label for="concern">Enter your concern: </label> <br>
-                    <textarea name="concern" id="concern" cols="30" rows="10"></textarea>
-                </div>
-
-                <div class="button-space">
-                    <button id="concern" type="submit">Submit</button>
-                </div>
-
             </form>
-            
         </div>
-    </main>
 
-    
+    </main>
 
     <footer>
         <div class="foot">
@@ -118,10 +109,10 @@
             <div class="social">
                 <h4>Social Media</h4>
                 <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+                    <li><a href="https://www.facebook.com/OberoiHotels"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/oberoihotels/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/OberoiHotels?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.oberoihotels.com/hotels-in-chandigarh-sukhvilas-resort/"><i class="fab fa-snapchat"></i></a></li>
                 </ul> 
             </div>
             
