@@ -1,18 +1,22 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+
+/*
+font-family: 'Merriweather', serif;
+*/
+
+/* Margin and padding set to 0 */
+*
+{
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-color: #f3f3f3;
-}
+
 /*Header CSS*/
 header
 {
     display: flex;
     flex-direction: row;
-    height: 12vh;
-    font-size: 1.2rem;
+    height: 10vh;
     background-color: #922c40;
 }
 
@@ -27,7 +31,7 @@ header nav
 /*Hotel Logo CSS*/
 header nav img
 {
-    width: 10vh;
+    width: 8vh;
     padding: 0 1vh;
 }
 
@@ -38,14 +42,18 @@ header nav ul li
     list-style: none;
     color: white;
     padding: 0 10px;
-    font-size: 1.2rem;
     font-family: 'Merriweather', serif;
 }
 
 /*While hover on Navbar Items CSS*/
 header nav ul li:hover
 {
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
     color:#ffcf6e;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
 }
 
 /*Navbar items anchor tag CSS*/
@@ -99,45 +107,102 @@ header nav ul a
     font-family: 'Merriweather', serif;
     font-weight: 900;
 }
-/* navbar ends     */
 
-  /* main starts */
-  .imgslider{
-      background-image: url("image/room01.jpg");
-      width: 90vw;
-      height: 70vh;
-      position: relative;
-        top: 0%;
-        left: 4.5%;
-        background-size: 100% 100%;
-        margin-top: 1.7vh;
-     box-shadow: 3px 5px 1px 2px grey;
-    border-radius: 3px;
-    animation:slider 18s infinite linear;
-  }
-  @keyframes slider{
-    0%{
-        background-image: url("image/room01.jpg");
-    }
-    16.67%{
-        background-image: url("image/room02.jpg");
-    }
-    33.33%{
-        background-image: url("image/room03.jpg");
-    }
-    50%{
-        background-image: url("image/room04.jpg");
-    }
-    66.67%{
-        background-image: url("image/room05.jpg");
-    }
-    100%{
-        background-image: url("image/room06.jpg");
-    }
+body
+{
+    background-color: #f3f3f3;
 }
 
 
-.room_cards{
+#check 
+{
+    display: none;
+}
+  
+.menu-btn 
+{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+  /* main starts */
+.imgslider
+{
+    background-image: url("images/room01.jpg");
+    width: 90vw;
+    height: 70vh;
+    position: relative;
+    top: 0%;
+    left: 4.5%;
+    background-size: 100% 100%;
+    margin-top: 1.7vh;
+    box-shadow: 3px 5px 1px 2px grey;
+    border-radius: 3px;
+    animation:slider 18s infinite linear;
+}
+
+@keyframes slider
+{
+    0%
+    {
+        background-image: url("images/room01.jpg");
+    }
+
+    16.67%
+    {
+        background-image: url("images/room02.jpg");
+    }
+
+    33.33%
+    {
+        background-image: url("images/room03.jpg");
+    }
+
+    50%
+    {
+        background-image: url("images/room04.jpg");
+    }
+
+    66.67%
+    {
+        background-image: url("images/room05.jpg");
+    }
+
+    100%
+    {
+        background-image: url("images/room06.jpg");
+    }
+}
+
+/* room start  */
+/* .room_heading{
+    text-align: center;
+    width: 10vw;
+    height: 7vh;
+    ba;
+    position: relative;
+    left:45vw;
+    top: 0%;
+    text-align: center;
+    
+} */
+
+hr
+{
+    background-color: #ffcf6e;
+    width: 600px;
+    height: 1px;
+    margin: 15px 0 20px 5px;
+}
+
+.room_cards
+{
     display: flex;
     flex-direction: column;
     width: 90vw;
@@ -148,9 +213,10 @@ header nav ul a
     position: relative;
     left: 4.6vw;
     margin-top: 10vh;
-    flex-wrap: wrap;
 }
-.room_cards .card{
+
+.room_cards .card
+{
     width: 80vw;
     height: 60vh;
     background-color: white;
@@ -161,64 +227,70 @@ header nav ul a
     box-shadow: 3px 2px 1px 1px gray;
 }
 
-.room_cards .card .room_img{
+.room_cards .card .room_img
+{
     height: 100%;
     width: 124%;
 }
 
-.room_cards .card img{
+.room_cards .card img
+{
     height: 100%;
     width: 100%; 
 }
 
-.room_cards .card .room_info{
+.room_cards .card .room_info
+{
     padding: 9px 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
-.room_cards .card .room_info h3{
+.room_cards .card .room_info h3
+{
     padding: 5px;
     font-size: 2rem;
     font-weight: 800;
-    border-bottom: solid wheat;
     margin-bottom: 1rem;
 }
 
-.room_cards .card .room_info p{
+.room_cards .card .room_info p
+{
     padding: 5px;
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
     letter-spacing: 0.3;
     color: rgba(0, 0, 0, 0.76);
 }
-.room_cards .card .room_info ul{
+
+.room_cards .card .room_info ul
+{
     list-style: none;
     margin: 15px 0;
 }
-.room_cards .card .room_info ul li{
+.room_cards .card .room_info ul li
+{
     padding: 5px 5px;
     letter-spacing: 1px;
     color: rgb(71, 71, 71);
 }
-.room_cards .card .room_info ul li i{
+
+.room_cards .card .room_info ul li i
+{
     padding: 6px;
     font-size: medium;
     margin-right: 5px;
 }
-.rate{
+
+.rate
+{
     opacity: 0.8;
 }
-.rate span{
+
+.rate span
+{
     font-size: 40px;
     font-weight: 900;
     color: var(--yellow);
-}
-@media (max-width: 1200px){
-
-    .rate{
-        display: none;
-        
-    }
 }
 
 /* reverse     part     */
@@ -233,67 +305,87 @@ header nav ul a
     margin-bottom: 3rem;
     box-shadow: 3px 2px 1px 1px gray;
 }
-.room_cards .card02 .room_img{
+.room_cards .card02 .room_img
+{
     height: 100%;
     width: 124%;
 }
-.room_cards .card02 img{
+
+.room_cards .card02 img
+{
     height: 100%;
     width: 100%;   
 }
-.room_cards .card02 .room_info{
+
+.room_cards .card02 .room_info
+{
     padding: 9px 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     background-color: white;
 }
-.room_cards .card02 .room_info h3{
+
+.room_cards .card02 .room_info h3
+{
     padding: 5px;
     font-size: 2rem;
     font-weight: 800;
-    border-bottom: solid wheat;
     margin-bottom: 1rem;
 }
-.room_cards .card02 .room_info p{
+.room_cards .card02 .room_info p
+{
     padding: 5px;
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
     letter-spacing: 0.3;
     color: rgba(0, 0, 0, 0.76);
 }
-.room_cards .card02 .room_info ul{
+
+.room_cards .card02 .room_info ul
+{
     list-style: none;
     margin: 15px 0;
 }
-.room_cards .card02 .room_info ul li{
+
+.room_cards .card02 .room_info ul li
+{
     padding: 5px 5px;
     letter-spacing: 1px;
     color: rgb(71, 71, 71);
 }
-.room_cards .card02 .room_info ul li i{
+
+.room_cards .card02 .room_info ul li i
+{
     padding: 6px;
     font-size: medium;
     margin-right: 5px;
     
 }
-.rate{
+
+.rate
+{
     opacity: 0.8;
 }
-.rate span{
+
+.rate span
+{
     font-size: 40px;
     font-weight: 900;
     color: goldenrod;
 }
 
 /* reverse part ends     */
-.room_info .but{
+.room_info .but
+
+{
     text-align: center;
     
 }
-.room_info .but button{
+
+.room_info .but button
+{
     width: 7vw;
     height: 4vh;
     font-size: large;
-    border-bottom: 3px solid rgb(212, 159, 25);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -302,39 +394,81 @@ header nav ul a
     cursor: pointer;
     
 }
+
 /* animation part   */
-.room_cards .card .room_img:hover{
+.room_cards .card .room_img:hover
+{
     transform:scale(1.01);
 }
-.room_cards .card02 .room_img:hover{
+
+.room_cards .card02 .room_img:hover
+{
     transform:scale(1.01);
 }
-.room_cards .card:hover{
+
+.room_cards .card:hover
+{
     transform: translate(-1%, -1%);
 }
-.room_cards .card02:hover{
+
+.room_cards .card02:hover
+{
     transform: translate(-1%, -1%);
 }
-.room_info .but button:hover{
+
+.room_info .but button:hover
+{
     background-color: rgba(0, 0, 0, 0.726);
     color: rgb(228, 170, 25);
 }
+
+.button-space
+{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.button-space button
+{
+    width: 100px;
+    height: 40px;
+    background-color: #922c40;
+    color: white;
+    font-family: 'Merriweather', serif;
+    border-radius: 5px;
+}
+
+.button-space button:hover
+{
+    width: 100px;
+    height: 40px;
+    background-color: #922c40;
+    color: #ffcf6e;
+    font-weight: 550;
+    font-family: 'Merriweather', serif;
+    border-radius: 5px;
+}
+
 /* animation part ends   */
 
   /* main ends  */
 
-  /* footer starts  */
+/*Footer CSS*/
 footer
 {
     display: flex;
     justify-content: center;
     bottom: 0;
     width: 100vw;
-    height: 20vh;
+    height: 25vh;
     background-color: #922c40;
     color: white;
     margin-top: 50px;
+    padding-top: 10px;
 }
+
 .foot .menu ul{
     list-style: none;
     display: flex;
@@ -342,21 +476,28 @@ footer
     justify-content: center;
 
 }
-.foot .menu ul li{
-    padding: 9px 10px;
-    font-size: 2vh;
-    color: wheat;
 
+.foot .menu ul li
+{
+    padding: 9px 20px;
+    font-size: 2vh;
+    color: white;
 }
-.foot .menu ul a{
+
+.foot .menu ul a
+{
     text-decoration: none;
 }
-.foot .social h4{
+
+.foot .social h4
+{
     text-align: center;
-    border-bottom: solid wheat;
+    border-bottom: solid white;
     padding: 1vh;
 }
-.foot .social ul li{
+
+.foot .social ul li
+{
     list-style: none;
     text-decoration: none;
     padding: 9px 10px;
@@ -364,29 +505,39 @@ footer
     color: white;
     
 }
-.foot .social ul a{
+
+.foot .social ul a
+{
     text-decoration: none;
-    color: wheat;
+    color: white;
 }
-.foot .social ul{
+
+.foot .social ul
+{
     display: flex;
     justify-content: center;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
 
-}
-h5{
+h5
+{
     text-align: center;
-    color: wheat;
-}
-.foot .social ul a:hover{
-    transition: 0.4s;
     color: white;
+    font-family: 'Merriweather', serif;
+    padding-top: 10px;
 }
-.foot .menu ul li:hover{
-    transition: 0.4s;
-    color: white;
+
+.foot .social ul a:hover
+{
+    transition: 0.3s;
+    color: #ffcf6e;
 }
-/* footer ends  */
+
+.foot .menu ul li:hover
+{
+    transition: 0.3s;
+    color: #ffcf6e;
+}

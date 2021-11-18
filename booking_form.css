@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+
+/*
+font-family: 'Merriweather', serif;
+*/
+
+/* Margin and padding set to 0 */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header CSS*/
+header
+{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    background-color: #922c40;
+}
+
+/*Header navbar CSS*/
+header nav
+{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*Hotel Logo CSS*/
+header nav img
+{
+    width: 8vh;
+    padding: 0 1vh;
+}
+
+/*Navbar items CSS (Home, About, Contact Us, etc..)*/
+header nav ul li
+{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/*While hover on Navbar Items CSS*/
+header nav ul li:hover
+{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    color:#ffcf6e;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/*Navbar items anchor tag CSS*/
+header nav ul a
+{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Searchbar CSS */
+#searchbar
+{
+    padding: 0 0 0 50px;  
+}
+
+/* Searchbar input area CSS */
+#searchbar input
+{
+    border-radius: 5px;
+    width: 576px;
+    height: 3vh;
+    padding: 0 0 0 12px;
+}
+
+/* Search button CSS */
+#search-button
+{
+    padding: 0 0 0 12px;
+}
+
+#search-button button
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffcf6e;
+    font-family: 'Merriweather', serif;
+}
+
+/* While hovering Search button CSS */
+#search-button button:hover
+{
+    width: 50px;
+    height: 3.4vh;
+    border-radius: 5px;
+    background-color: #ffda6e;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+
+body
+{
+    background-color: #f3f3f3;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.form-error
+{
+    color: red;
+}
+
+.container
+{
+    width: 70vw;
+    background-color: white;
+    margin-top: 30px;
+    bottom: 30px;
+}
+
+.container h1
+{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.container hr
+{
+    margin: 0 200px;
+    height: 1px;
+    background-color: #ffcf6e;
+}
+
+.first-name
+{
+    font-family: 'Merriweather', serif;
+    margin: 50px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.first-name input
+{
+    margin-left: 20px;
+    padding: 0 12px;
+    height: 25px;
+    width: 925px;
+    font-family: 'Merriweather', serif;
+}
+
+.last-name
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.last-name input
+{
+    margin-left: 24px;
+    padding: 0 12px;
+    height: 25px;
+    width: 925px;
+    font-family: 'Merriweather', serif;
+}
+
+.email
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email input
+{
+    margin-left: 24px;
+    padding: 0 12px;
+    height: 25px;
+    width: 945px;
+    font-family: 'Merriweather', serif;
+}
+
+.mobile-no
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.mobile-no input
+{
+    margin-left: 24px;
+    padding: 0 12px;
+    height: 25px;
+    width: 250px;
+    font-family: 'Merriweather', serif;
+}
+
+.gender
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#male, #female
+{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.aadhar
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.aadhar input
+{
+    margin-left: 24px;
+    padding: 0 12px;
+    height: 25px;
+    width: 300px;
+    font-family: 'Merriweather', serif;
+}
+
+.date-of-arrival
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.date-of-arrival input
+{
+    margin-left: 25px;
+    width: 200px;
+    height: 25px;
+    font-family: 'Merriweather', serif;
+}
+
+.days
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.days select
+{
+    font-family: 'Merriweather', serif;
+    width: 150px;
+    margin-left: 25px;
+    height: 25px;
+}
+
+.days select option
+{
+    width: 150px;
+    font-family: 'Merriweather', serif;
+    height: 25px;
+}
+
+.rooms
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rooms select
+{
+    font-family: 'Merriweather', serif;
+    width: 150px;
+    margin-left: 25px;
+    height: 25px;
+}
+
+.rooms select option
+{
+    width: 150px;
+    font-family: 'Merriweather', serif;
+    height: 25px;
+}
+
+.room-type
+{
+    font-family: 'Merriweather', serif;
+    margin: 25px 0 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.col-90 input
+{
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button-space
+{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+}
+
+.button-space button
+{
+    margin-top: 25px;
+    background-color: #922c40;
+    font-family: 'Merriweather', serif;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.success
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7df381;
+    font-family: 'Merriweather', serif;
+    border-radius: 5px;
+    text-align: center;
+    width: 70vw;
+    height: 40px;
+    margin-left: 280px;
+    margin-top: 30px;
+}
+
+/*Footer CSS*/
+footer
+{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100vw;
+    height: 25vh;
+    background-color: #922c40;
+    color: white;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+.foot .menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.foot .menu ul li
+{
+    padding: 9px 20px;
+    font-size: 2vh;
+    color: white;
+}
+
+.foot .menu ul a
+{
+    text-decoration: none;
+}
+
+.foot .social h4
+{
+    text-align: center;
+    border-bottom: solid white;
+    padding: 1vh;
+}
+
+.foot .social ul li
+{
+    list-style: none;
+    text-decoration: none;
+    padding: 9px 10px;
+    font-size: 3vh;
+    color: white;
+    
+}
+
+.foot .social ul a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.foot .social ul
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h5
+{
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding-top: 10px;
+}
+
+.foot .social ul a:hover
+{
+    transition: 0.3s;
+    color: #ffcf6e;
+}
+
+.foot .menu ul li:hover
+{
+    transition: 0.3s;
+    color: #ffcf6e;
+}
